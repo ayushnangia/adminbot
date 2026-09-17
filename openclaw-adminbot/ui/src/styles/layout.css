@@ -6784,6 +6784,9 @@ adminbot-deadlines-view {
   font-size: var(--control-ui-text-md);
   font-weight: 600;
   color: var(--text-strong);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
 }
 
 .lab-sharing-director__meta {

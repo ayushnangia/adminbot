@@ -137,6 +137,23 @@ describe("renderLabSharing", () => {
     expect(text(container, "lab-sharing-director")).toContain("Busy");
   });
 
+  it("keeps a long status message readable instead of relying on horizontal overflow", () => {
+    const { container } = renderView({
+      labSharing: snapshot({
+        status: {
+          availability: "away",
+          message:
+            "Zhijing travel plans: September 11–17: Zürich. September 18–20 inclusive: Toronto. September 21–25: Ann Arbor and Oregon.",
+          updated_at: "2026-09-10T10:00:00.000Z",
+          expires_at: "2026-09-20T10:00:00.000Z",
+        },
+      }),
+    });
+    const status = container.querySelector<HTMLElement>(".lab-sharing-director__name");
+    expect(status?.textContent).toContain("Zhijing travel plans");
+    expect(status?.className).toContain("lab-sharing-director__name");
+  });
+
   // Nothing standing is nothing to say. An empty status card reads as a broadcast that failed to
   // load, which is worse than no card.
   it("leaves the broadcast strip out when there is none", () => {

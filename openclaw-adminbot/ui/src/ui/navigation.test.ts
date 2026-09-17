@@ -176,7 +176,7 @@ describe("subtitleForTab", () => {
       myWork: "What you are working on, and anything holding it up.",
       // Corrected to the shipped string: the tab has said "Coming soon" for a while and this
       // expectation had not followed, leaving the suite red for a reason unrelated to it.
-      labSharing: "Coming soon — share resources, ideas, and collaborate.",
+      labSharing: "Find projects, share help, and collaborate with lab members.",
       adminbotOpportunities: "PhD programs, internships, grants, awards, and Rising Stars.",
       chat: "Gateway chat for quick interventions.",
       overview: "Status, entry points, health.",

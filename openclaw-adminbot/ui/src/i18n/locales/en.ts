@@ -564,7 +564,7 @@ export const en: TranslationMap = {
     profile: "Your details, and anything still blank.",
     gettingStarted: "Your setup checklist — what is left, and what you have already done.",
     myWork: "What you are working on, and anything holding it up.",
-    labSharing: "Coming soon — share resources, ideas, and collaborate.",
+    labSharing: "Find projects, share help, and collaborate with lab members.",
     agents: "Workspaces, tools, identities.",
     adminbot: "Approval queue and execution controls.",
     adminbotRegistrations: "Approve or reject pending member signups and roster claims.",
